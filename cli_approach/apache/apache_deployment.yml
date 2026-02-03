@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: apache
 spec:
-  replicas: 6
+  replicas: 2
   selector:
     matchLabels:
       app: apache
@@ -19,9 +19,9 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
+            memory: "124Mi"
+            cpu: "500m"
           limits:
             memory: "128Mi"
-            cpu: "500m"
+            cpu: "1000m"
 
