@@ -10,8 +10,8 @@ spec:
     targetRevision: main
     path: multicluster/online-shop # Path within the repo
   destination:
-    server: https://10.128.0.50:33893 server URL here, run `argocd cluster list` to get the URL
-    namespace: default
+    server: https://10.128.0.50:33893 # server URL here, run `argocd cluster list` to get the URL
+    namespace: default 
   syncPolicy:
     automated:
       prune: true
